@@ -1,0 +1,22 @@
+.page-wrap {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1 0 0;
+}
+
+footer {
+  height: 25px;
+  background: white;
+  background-image: url('/assets/images/TochnoLogiaLogo.gif');
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  border-top: solid 1px rgb(298, 108, 0);
+}
+
+mat-sidenav {
+  width: 200px;
+}

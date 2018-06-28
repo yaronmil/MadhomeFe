@@ -6,5 +6,15 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app';
+  links = [{
+    name: 'דש בורד',
+    icon: 'dashboard',
+    url: 'DashBoard'
+  },
+  {
+    name: 'ניהול לקוחות',
+    icon: 'list',
+    url: 'Customers'
+  }
+  ];
 }
