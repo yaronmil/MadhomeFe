@@ -12,6 +12,9 @@ $theme: mat-light-theme($primary, $accent, $warn);
 
 @include angular-material-theme($theme);
 
+// .mat-nav-list a.active {
+//   background:  mat-color($accent);
+// }
 // footer {
 //   background-color: mat-color($accent);
   

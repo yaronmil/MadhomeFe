@@ -8,8 +8,13 @@ import { Component, OnInit } from '@angular/core';
 export class DashBoardComponent implements OnInit {
 
   constructor() { }
-
+  navLinks = [
+    { path: 'Graph', label: 'גרפים' },
+    { path: 'Tables', label: 'טבלאות' },
+    { path: 'Reports', label: 'דוחות' }
+  ];
   ngOnInit() {
   }
 
 }
+

@@ -1,11 +1,12 @@
 .page-wrap {
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
+  height: 100vh;
 }
+ 
 
 main {
-  flex: 1 0 0;
+  flex: 1;
 }
 
 footer {
@@ -15,6 +16,10 @@ footer {
   background-repeat: no-repeat;
   background-position: right 10px center;
   border-top: solid 1px rgb(298, 108, 0);
+}
+
+.active {
+  background-color: grey;
 }
 
 mat-sidenav {

@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
 import {
   
   MatAutocompleteModule,
@@ -47,9 +47,8 @@ import {
     MatSidenavModule,
     MatToolbarModule,
     MatListModule,
-    BrowserAnimationsModule,
-    MatBadgeModule
-    
+    MatBadgeModule,
+     MatTabsModule,
   ],
   declarations: []
 })
