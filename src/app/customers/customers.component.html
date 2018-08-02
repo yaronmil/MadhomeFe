@@ -1,3 +1,68 @@
-<p>
-  customers works!
-</p>
+<mat-sidenav-container  dir="rtl">
+  <mat-sidenav #custSideNav mode="over" [opened]='true'>
+<app-customer-detail></app-customer-detail>
+  </mat-sidenav>
+  <mat-sidenav-content>
+     
+ 
+
+<kendo-grid [data]="gridView" style="height:100%;" [pageable]="true" [pageSize]="25" [skip]="0" [filterable]="true">
+  <ng-template kendoGridToolbarTemplate [position]="'top'">
+    <button kendoButton [icon]="'filter'">סינון מתקדם</button>
+    <button kendoButton [icon]="'excel'">אקסל</button>
+  </ng-template>
+  <kendo-grid-messages noRecords="לא נמצאו תוצאות.">
+  </kendo-grid-messages>
+  <kendo-grid-column field="MerhavName" title="מרחב" [locked]="true" width="105">
+        <ng-template kendoGridFilterCellTemplate>
+          <!-- <kendo-switch (valueChange)="switchChange($event)" offLabel="No" [checked]="checked" onLabel="Yes">
+          </kendo-switch> -->
+          <kendo-dropdownlist [data]="categories" [id]="'CategoryName'"  [value]="'הכל'">
+          </kendo-dropdownlist>
+
+        </ng-template>
+  </kendo-grid-column>
+  <kendo-grid-column field="SnifName" title="סניף" [locked]="true" width="105">
+  </kendo-grid-column>
+  <kendo-grid-column field="SnifId" title="מס' סניף" width="110">
+  </kendo-grid-column>
+  <kendo-grid-column field="SnifIdOriginal" title="סניף מקור" width="120"  [filterable]="false">
+  </kendo-grid-column>
+  <kendo-grid-column field="CheshbonId" [locked]="true" title="חשבון" width="75">
+  </kendo-grid-column>
+  <kendo-grid-column field="EffectiveDate" [locked]="true" title="תאריך פ.ח" width="120" [filterable]="false" > 
+  </kendo-grid-column>
+  <kendo-grid-column field="CheshbonName" [locked]="true" title="שם" width="170">
+      <ng-template kendoGridCellTemplate let-dataItem let-rowIndex="rowIndex">
+       
+        <a   (click)="custSideNav.toggle()">{{dataItem.CheshbonName}}</a>
+         
+      </ng-template>
+  </kendo-grid-column>
+  <kendo-grid-column field="ChativaYeshut" title="שיוך ארגוני" width="120">
+  </kendo-grid-column>
+  <!-- <kendo-grid-column field="AnafMishkiName" title="ענף משק" width="180">
+  </kendo-grid-column> -->
+  <kendo-grid-column field="Obligo" title="אובליגו" width="130"  [filterable]="false">
+  </kendo-grid-column>
+  <!-- <kendo-grid-column field="TsuaRwaCalc" title="תשואה לנכסי סיכון" width="120">
+  </kendo-grid-column> -->
+  <kendo-grid-column field="ElGrp" title="דירוג נוכחי" width="125" >
+  </kendo-grid-column>
+  <kendo-grid-column field="ElGrp1" title="דירוג קודם" width="125">
+  </kendo-grid-column>
+  <kendo-grid-column field="CurrentRankName" title="ציון" width="125">
+  </kendo-grid-column>
+  <kendo-grid-column field="PrevRank1" title="ציון קודם" width="125">
+  </kendo-grid-column>
+  <ng-template kendoPagerTemplate let-totalPages="totalPages" let-currentPage="currentPage">
+    <kendo-pager-prev-buttons></kendo-pager-prev-buttons>
+    <kendo-pager-numeric-buttons [buttonCount]="10"></kendo-pager-numeric-buttons>
+    <kendo-pager-next-buttons></kendo-pager-next-buttons>
+    <kendo-pager-info></kendo-pager-info>
+
+  </ng-template>
+</kendo-grid>
+</mat-sidenav-content>
+
+</mat-sidenav-container>

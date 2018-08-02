@@ -40,7 +40,6 @@ import {
 } from '@angular/material';
 
 @NgModule({
-  
   exports: [
     MatButtonModule,
     MatIconModule,
@@ -49,6 +48,8 @@ import {
     MatListModule,
     MatBadgeModule,
      MatTabsModule,
+    MatCardModule,
+    MatExpansionModule
   ],
   declarations: []
 })

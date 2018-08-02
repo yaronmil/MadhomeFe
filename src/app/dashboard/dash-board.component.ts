@@ -9,9 +9,9 @@ export class DashBoardComponent implements OnInit {
 
   constructor() { }
   navLinks = [
-    { path: 'Graph', label: 'גרפים' },
-    { path: 'Tables', label: 'טבלאות' },
-    { path: 'Reports', label: 'דוחות' }
+    { path: 'Graph', label: 'גרפים', icon: 'bar_chart' },
+    { path: 'Tables', label: 'טבלאות', icon: 'table_chart' },
+    { path: 'Reports', label: 'דוחות', icon: 'list' }
   ];
   ngOnInit() {
   }

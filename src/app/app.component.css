@@ -3,7 +3,6 @@
   flex-direction: column;
   height: 100vh;
 }
- 
 
 main {
   flex: 1;
@@ -24,4 +23,8 @@ footer {
 
 mat-sidenav {
   width: 200px;
+}
+
+main{
+  overflow: hidden;
 }
