@@ -49,7 +49,11 @@ import {
     MatBadgeModule,
      MatTabsModule,
     MatCardModule,
-    MatExpansionModule
+    MatExpansionModule,
+    MatSelectModule,
+    MatInputModule,
+    MatRadioModule,
+    MatSliderModule
   ],
   declarations: []
 })

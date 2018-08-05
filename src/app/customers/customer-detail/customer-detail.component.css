@@ -1,10 +1,15 @@
-.customer-detail-wrapper{
-    display:flex;
+.customer-detail-wrapper {
+    display: flex;
     flex-direction: column;
-    height:100%;
-    width:100%;
+    height: 100%;
+    width: 100%;
 }
-th,td{
+
+th, td {
     text-align: right;
-    padding:0 2px 0 2px;
+    padding: 0 2px 0 2px;
+}
+
+.customerDetailsSection td {
+    padding: 5px;
 }

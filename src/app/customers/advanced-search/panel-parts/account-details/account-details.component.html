@@ -1,0 +1,22 @@
+<mat-expansion-panel>
+  <mat-expansion-panel-header>
+    <mat-panel-title>
+      פרטי חשבון, פרטי אובליגו ותשואה
+    </mat-panel-title>
+
+  </mat-expansion-panel-header>
+  <div>
+    <span>סכום אפ"מ</span>
+    <mat-slider class="example-margin" [disabled]="disabled" [invert]="invert" [max]="max" [min]="min" [step]="step" [thumbLabel]="thumbLabel"
+      [tickInterval]="tickInterval" [(ngModel)]="value" [vertical]="vertical">
+    </mat-slider>
+  </div>
+  <div>
+    <span>סכום אובליגו</span>
+    <mat-slider class="example-margin" [disabled]="disabled" [invert]="invert" [max]="max" [min]="min" [step]="step" [thumbLabel]="thumbLabel"
+      [tickInterval]="tickInterval" [(ngModel)]="value" [vertical]="vertical">
+    </mat-slider>
+  </div>
+
+
+</mat-expansion-panel>

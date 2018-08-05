@@ -1,3 +1,19 @@
-mat-sidenav {
+.sidenav-defaults {
+    width: 400px;
+}
+
+.sidenav-customer-details {
     width: 800px;
+}
+
+.sidenav-advanced-search {
+    width: 800px;
+}
+
+/* mat-sidenav {
+    width: 800px;
+} */
+
+.k-dropdown {
+    width: 100px;
 }

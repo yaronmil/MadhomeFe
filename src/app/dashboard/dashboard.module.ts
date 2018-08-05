@@ -1,4 +1,3 @@
-import { CustomersService } from './../customers/customers.service';
 import { TablesComponent } from './tables/tables.component';
 import { GraphComponent } from './graph/graph.component';
 import { NgModule } from '@angular/core';

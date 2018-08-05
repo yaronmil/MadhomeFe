@@ -12,6 +12,10 @@ import { KendoModule } from './kendo/kendo.module';
 import { RTL } from '@progress/kendo-angular-l10n';
 import { CustomerDetailComponent } from './customers/customer-detail/customer-detail.component';
 import { ChartsModule } from '@progress/kendo-angular-charts';
+import { AdvancedSearchComponent } from './customers/advanced-search/advanced-search.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { SnifDetailsComponent } from './customers/advanced-search/panel-parts/snif-details/snif-details.component';
+import { AccountDetailsComponent } from './customers/advanced-search/panel-parts/account-details/account-details.component';
 
 
 
@@ -19,7 +23,11 @@ import { ChartsModule } from '@progress/kendo-angular-charts';
   declarations: [
     AppComponent,
     CustomersComponent,
-    CustomerDetailComponent
+    CustomerDetailComponent,
+    AdvancedSearchComponent,
+    SnifDetailsComponent,
+    AccountDetailsComponent
+
   ],
   imports: [
     BrowserModule,
@@ -29,6 +37,8 @@ import { ChartsModule } from '@progress/kendo-angular-charts';
     AppRoutingModule,
     DashboardModule,
     ChartsModule,
+    FormsModule, 
+    ReactiveFormsModule
   ],
   providers: [{ provide: RTL, useValue: true }],
   bootstrap: [AppComponent]

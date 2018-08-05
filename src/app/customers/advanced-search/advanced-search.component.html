@@ -1,0 +1,49 @@
+<mat-list>
+  <mat-list-item>
+    <mat-icon mat-list-icon>flag</mat-icon>
+    <h4 mat-line>סינון תוצאות:</h4>
+    <p mat-line> 254 </p>
+  </mat-list-item>
+  <mat-divider></mat-divider>
+
+  <mat-list-item>
+    <mat-icon mat-list-icon>search</mat-icon>
+    <mat-form-field style="margin-right:20px;">
+      <input matInput type="text" placeholder="חיפוש כללי" [(ngModel)]="value">
+      <button mat-button *ngIf="value" matSuffix mat-icon-button aria-label="Clear" (click)="value=''">
+        <mat-icon>close</mat-icon>
+      </button>
+    </mat-form-field>
+  </mat-list-item>
+  <mat-card>
+    <mat-card-content>
+      <mat-accordion>
+        <app-snif-details></app-snif-details>
+        <app-account-details></app-account-details>
+      </mat-accordion>
+    </mat-card-content>
+  </mat-card>
+
+  <mat-list-item> Paprika </mat-list-item>
+</mat-list>
+
+
+<!-- 
+<mat-card style="width:250px;">
+  <mat-card-title>פרטי סניף</mat-card-title>
+  <mat-card-content>
+    <mat-form-field>
+      <mat-select placeholder="שיוך ארגוני">
+        <mat-option value='קמעונאית' >
+         קמעונאית
+        </mat-option>
+          <mat-option>
+            עסקית
+          </mat-option>
+            <mat-option>
+              פיננסית
+            </mat-option>
+      </mat-select>
+    </mat-form-field>
+  </mat-card-content>
+</mat-card> -->
